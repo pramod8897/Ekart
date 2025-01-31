@@ -74,7 +74,7 @@ pipeline {
             steps{
                 script{
                    withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
-                   sh 'docker login -u pramodk.patil7305 -p ${dockerhubpwd}'}
+                   sh 'docker login -u pramodk.patil7305 -p ${Pramod@7305}'}
                    sh 'docker push pramod8897/ekart:latest'
                 }
             }
